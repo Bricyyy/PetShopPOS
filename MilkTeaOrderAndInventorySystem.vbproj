@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{900A1FCD-5917-4C8E-BB8F-6B3E27C1344D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MilkTeaOrderAndInventorySystem.My.MyApplication</StartupObject>
+    <RootNamespace>MilkTeaOrderAndInventorySystem</RootNamespace>
+    <AssemblyName>MilkTeaOrderAndInventorySystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/MilkTeaOrderAndInventorySystem/</UpdateUrl>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MilkTeaOrderAndInventorySystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MilkTeaOrderAndInventorySystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>0Eto pre.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CAFD5EE30B0F4A07F40D2C91652296D24BFB3D52</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MilkTeaOrderAndInventorySystem_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.2.4, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.2.4\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accountdbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>accountdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AddressNotice.Designer.vb">
+      <DependentUpon>AddressNotice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddressNotice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddressPopUp.Designer.vb">
+      <DependentUpon>AddressPopUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddressPopUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlreadyExist.Designer.vb">
+      <DependentUpon>AlreadyExist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AlreadyExist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.vb">
+      <DependentUpon>ChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeVerification.Designer.vb">
+      <DependentUpon>CodeVerification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CodeVerification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteConfirmation.Designer.vb">
+      <DependentUpon>DeleteConfirmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteConfirmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotPassForm.Designer.vb">
+      <DependentUpon>forgotPassForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forgotPassForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.vb">
+      <DependentUpon>History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="History.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.vb">
+      <DependentUpon>Homepage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePanel.Designer.vb">
+      <DependentUpon>HomePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomePanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertPictureSample.Designer.vb">
+      <DependentUpon>InsertPictureSample.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertPictureSample.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemCheckoutConfirmation.Designer.vb">
+      <DependentUpon>ItemCheckoutConfirmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ItemCheckoutConfirmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadForm.Designer.vb">
+      <DependentUpon>LoadForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddItem.Designer.vb">
+      <DependentUpon>AddItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyAccount.Designer.vb">
+      <DependentUpon>MyAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyAddress.Designer.vb">
+      <DependentUpon>MyAddress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MyAddress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="myConnection.vb" />
+    <Compile Include="OrderConfirmation.Designer.vb">
+      <DependentUpon>OrderConfirmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrderConfirmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsManagement.Designer.vb">
+      <DependentUpon>ProductsManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPass.Designer.vb">
+      <DependentUpon>ResetPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample.Designer.vb">
+      <DependentUpon>Sample.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sample.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SavedConfirmation.Designer.vb">
+      <DependentUpon>SavedConfirmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SavedConfirmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.vb">
+      <DependentUpon>Signup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassEnCDeC.vb" />
+    <Compile Include="UniversalVariables.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddressNotice.resx">
+      <DependentUpon>AddressNotice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddressPopUp.resx">
+      <DependentUpon>AddressPopUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlreadyExist.resx">
+      <DependentUpon>AlreadyExist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeVerification.resx">
+      <DependentUpon>CodeVerification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteConfirmation.resx">
+      <DependentUpon>DeleteConfirmation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotPassForm.resx">
+      <DependentUpon>forgotPassForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePanel.resx">
+      <DependentUpon>HomePanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertPictureSample.resx">
+      <DependentUpon>InsertPictureSample.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemCheckoutConfirmation.resx">
+      <DependentUpon>ItemCheckoutConfirmation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadForm.resx">
+      <DependentUpon>LoadForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddItem.resx">
+      <DependentUpon>AddItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAccount.resx">
+      <DependentUpon>MyAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAddress.resx">
+      <DependentUpon>MyAddress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderConfirmation.resx">
+      <DependentUpon>OrderConfirmation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsManagement.resx">
+      <DependentUpon>ProductsManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPass.resx">
+      <DependentUpon>ResetPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample.resx">
+      <DependentUpon>Sample.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SavedConfirmation.resx">
+      <DependentUpon>SavedConfirmation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="accountdbDataSet.xsc">
+      <DependentUpon>accountdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="accountdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>accountdbDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="accountdbDataSet.xss">
+      <DependentUpon>accountdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MilkTeaOrderAndInventorySystem_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eye-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hide-100_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0Eto pre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rabbit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\birds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hamster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puppy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-closed-eye-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkcolored.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle1colored.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colored.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowcolored.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowgray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="0Eto pre.ico" />
+    <None Include="Resources\outofstock.png" />
+    <None Include="Resources\icons8-trash-384.png" />
+    <None Include="Resources\additem_120286.png" />
+    <None Include="Resources\EditItemIconColored.png" />
+    <None Include="Resources\ManageItemIconColored.png" />
+    <None Include="Resources\icons8-add-shopping-cart-96.png" />
+    <None Include="Resources\homeIconWhite.png" />
+    <None Include="Resources\icons8-money-64.png" />
+    <None Include="Resources\icons8-credit-card-96.png" />
+    <None Include="Resources\icons8-fingerprint-scan-90.png" />
+    <None Include="Resources\cashIconColored.png" />
+    <None Include="Resources\cartIconColored.png" />
+    <None Include="Resources\fingerprintIconColored.png" />
+    <None Include="Resources\icons8-delete-240.png" />
+    <None Include="Resources\icons8-delete-384.png" />
+    <None Include="Resources\icons8-delete-500.png" />
+    <None Include="Resources\icons8-x-96.png" />
+    <None Include="Resources\line.png" />
+    <None Include="Resources\iconPersonColored.png" />
+    <None Include="Resources\icons8-edit-144.png" />
+    <None Include="Resources\editIconColored.png" />
+    <None Include="Resources\icons8-person-64.png" />
+    <None Include="Resources\icons8-shampoo-90.png" />
+    <None Include="Resources\icons8-pet-bowl-64.png" />
+    <None Include="Resources\icons8-store-96.png" />
+    <None Include="Resources\icons8-cat-cage-128.png" />
+    <None Include="Resources\icons8-leash-90.png" />
+    <None Include="Resources\icons8-pills-100.png" />
+    <None Include="Resources\icons8-search-480.png" />
+    <None Include="Resources\homeIconColored.png" />
+    <None Include="Resources\historyIconColored.png" />
+    <None Include="Resources\settingsIconColored.png" />
+    <None Include="Resources\messageIconColored.png" />
+    <None Include="Resources\securityIconColored.png" />
+    <None Include="Resources\addressIconColored.png" />
+    <None Include="Resources\icons8-home-144.png" />
+    <None Include="Resources\icons8-time-machine-96.png" />
+    <None Include="Resources\icons8-settings-384.png" />
+    <None Include="Resources\icons8-envelope-96.png" />
+    <None Include="Resources\icons8-lock-384.png" />
+    <None Include="Resources\icons8-home-address-100.png" />
+    <None Include="Resources\icons8-export-96.png" />
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
